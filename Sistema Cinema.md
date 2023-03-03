@@ -9,14 +9,14 @@ programa {
 
 	para (inteiro linha = 1; linha < 11; linha++)
 	{
-		para (inteiro coluna = 1; coluna < 11; coluna++)
-		{
-				cinema[linha][coluna] = "🪑" 
-		}
+	  para (inteiro coluna = 1; coluna < 11; coluna++)
+	  {
+	    cinema[linha][coluna] = "🪑" 
+	  }
 	}
-    cadeia voltar = "s"
-    se (voltar == "s"){
-      faca{
+   cadeia voltar = "s"
+   se (voltar == "s"){
+     faca{
       limpa()    
       escreva("1 - Reservar\n")
       escreva("2 - Assentos\n")
@@ -24,9 +24,9 @@ programa {
       leia(opcao)
       limpa()
 
-        escolha(opcao)
-        {
-          caso 1:
+       escolha(opcao)
+       {
+         caso 1:
             escreva("Fila: ")
             leia(fila)
             escreva("Cadeira: ")
