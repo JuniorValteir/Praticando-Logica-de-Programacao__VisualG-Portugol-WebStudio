@@ -1,4 +1,4 @@
-#Reserva de assentos cinema/teatro (Portugol)
+# Reserva de assentos cinema/teatro (Portugol)
 
 ```
 programa {
