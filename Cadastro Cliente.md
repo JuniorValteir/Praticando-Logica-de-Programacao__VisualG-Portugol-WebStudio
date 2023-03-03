@@ -1,11 +1,7 @@
 # Cadastro Cliente (Portugol_VisualG)
 ```
 Algoritmo "Cadastro Cliente"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 03/03/2023
+
 Var
 opcaoMenu : caractere
 clientes : vetor[1..5] de caractere
