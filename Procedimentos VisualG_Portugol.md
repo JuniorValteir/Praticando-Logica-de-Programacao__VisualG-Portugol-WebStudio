@@ -1,13 +1,13 @@
 # Procedimento Simples de Aprovação Aluno
 ```
 Algoritmo "funcoes"
-
 Var
 
-num1,num2,num3,media : real
-aprovacao: caractere
+num1,num2,num3 : real
 
 funcao mediaAluno(a,b,c:real):real
+var
+media : real
 inicio
 
 media <- (a+b+c)/3
@@ -15,6 +15,8 @@ retorne media
 
 fimfuncao
 funcao aprovacaoAluno(): caractere
+var
+aprovacao : caractere
 inicio
 
   se (mediaAluno(num1,num2,num3) >= 6) entao
