@@ -1,4 +1,5 @@
 #Reserva de assentos cinema/teatro (Portugol)
+
 ```
 programa {
   funcao inicio() {
