@@ -1,46 +1,67 @@
-Algoritmo "semnome"
+#Reserva de assentos cinema/teatro (Portugol)
+```
+programa {
+  funcao inicio() {
 
-Var
- cinema: vetor[1..10, 1..10] de caractere
- opcao : caractere
- i,j, fileira, cadeira: inteiro
+  cadeia cinema[11][11]
+  inteiro opcao, fila, cadeira
 
-Inicio
-
-para i de 1 ate 10 faca
-para j de 1 ate 10 faca
-     cinema[i,j] <- "0"
-     
-fimpara
-fimpara
-
-repita
-      Escreval("1- Reservar")
-      Escreval("2- Ver Layout")
-      Escreval("3- sair")
+	para (inteiro linha = 1; linha < 11; linha++)
+	{
+		para (inteiro coluna = 1; coluna < 11; coluna++)
+		{
+				cinema[linha][coluna] = "🪑" 
+		}
+	}
+    cadeia voltar = "s"
+    se (voltar == "s"){
+      faca{
+      limpa()    
+      escreva("1 - Reservar\n")
+      escreva("2 - Assentos\n")
+      escreva("3 - Sair\n")
       leia(opcao)
-      
-      escolha opcao
-      caso "1"
-           Escreval("Fileira: ")
-           leia(fileira)
-           Escreval("Cadeira")
-           leia(cadeira)
-              se cinema[fileira,cadeira] = "0" entao
-                 cinema[fileira,cadeira] <- "X"
-              senao
-                 escreva("Poltrona j� ocupada")
-              fimse
-              
-       caso "2"
-          para i de 1 ate 10 faca
-               para j de 1 ate 10 faca
-               escreva(" ",cinema[i,j]," ")
-               fimpara
-          fimpara
-          Escreval("")
-      fimescolha
-ate opcao = "3"
+      limpa()
 
+        escolha(opcao)
+        {
+          caso 1:
+            escreva("Fila: ")
+            leia(fila)
+            escreva("Cadeira: ")
+            leia(cadeira)
+            se (cinema[fila][cadeira] == "🪑" ){
+                cinema[fila][cadeira] = "❌"
+                escreva("Deseja Voltar ao menu? ")
+                leia(voltar)
+                
+            }senao{
+              escreva("Assento já ocupado. Escolha outra posição")
+            }
+          pare
 
-Fimalgoritmo
+          caso 2:
+
+            para (inteiro linha = 1; linha < 11; linha++)
+            {
+              para (inteiro coluna = 1; coluna < 11; coluna++)
+              {
+                escreva("    ", cinema[linha][coluna],"    ") 
+
+              }
+              escreva ("\n")
+            }
+
+            escreva("\nDeseja Voltar ao menu? ")
+            leia(voltar)	
+          pare
+
+          caso contrario:
+            escreva("Opção Invalida 🤔")
+
+        }
+      }enquanto(opcao != 3)
+    }
+
+  }
+}
