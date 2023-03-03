@@ -1,4 +1,4 @@
-# Procedimento Simples de Aprovação Aluno
+# Media e Aprovação aluno - Portugol_VisualG
 ```
 Algoritmo "funcoes"
 Var
